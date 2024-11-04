@@ -1,194 +1,43 @@
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Responsive Portfolio Website</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <meta name="viewport" content="width=device-width">
-    </head>
-    <body>
-        <!--навигация епт-->
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Bloodysharp</a>
+
         <nav>
-            <div class="nav-container">
-                <div class="logo">
-                    <span>Kirill</span>
-                </div>
-            </div>
-            <div class="links">
-                <div class="link"><a href="#">Home</a></div>
-                <div class="link"><a href="#">About</a></div>
-                <div class="link"><a href="#">Skills</a></div>
-                <div class="link"><a href="#">Services</a></div>
-                <div class="link"><a href="#">Contact</a></div>
-            </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()" ></i>
-            <div class="dropdown">
-                <div class="links">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Services</a>
-                    <a href="#">Contact</a>
-                    <i class="fa-solid fa-xmark cancel" onclick="cancel()" ></i>
-                </div>
-            </div>
+            <a href="#" class="active"> Home</a>
+            <a href="#" >About</a>
+            <a href="#" >Skills</a>
+            <a href="#" >Education</a>
+            <!--<a href="#" >Experience</a>-->
+            <a href="#" >Contact</a>
         </nav>
-        <section>
-            <div class="main-container">
-                <div class="image">
-                    <img src="images/main.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h1 data-aos="fade-left">
-                        Hey I'm 
-                        <span>Kirill</span>
-                    </h1>
-                    <div class="typewriter">I'm a</div>
-                    <span class="typewriter-text"></span>
-                    <label for=""></label>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore, molestias iusto neque eaque facere ullam repellendus, ea ratione laborum, magni tenetur. Consequatur eos natus aliquam similique accusamus, repellat sequi.</p>
-                    <div class="social-links">
-                        <a href="#" >
-                        <I class="fa-brands fa-github"></I>
-                        </a>
-                        <a href="#" >
-                            <I class="fa-brands fa-instagram"></I>
-                            </a>
-                            <a href="#">
-                                <I class="fa-brands fa-telegram"></I>
-                                </a>
-                                <a href="#">
-                                    <I class="fa-brands fa-twitter"></I>
-                                    </a>
-                    </div>
-                    <div class="btn">
-                        <button>Hire me</button>
-                    </div>
-                </div>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="images/main.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Kirill</span></h1>
+            <h3 class="typing-text">I'm a Student<span></span></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+            <div class="social-icons">
+                <a href="https://t.me/Ketam1ne_ketam1ne"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://github.com/Bloodysharp"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-        </section>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
+   
 
-
-        <!--старт пейдж дадада(ета пиздец)-->
-
-        <section class="about" id="about">
-            <div class="content">
-                <div class="title"><span>About me</span></div>
-                <div class="about-details">
-                    <div class="left">
-                        <img src="images/main.jpg" alt=""/>
-                    </div>
-                    <div class="right">
-                        <div class="topics">Designing in My Passion</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, corrupti perspiciatis! 
-                            Mollitia dolores optio aliquam sequi iusto. Quod rem omnis voluptatem cupiditate nihil praesentium autem, laboriosam accusamus, voluptates, explicabo eos!
-                        </p>
-                        <div class="button">
-                            <button>Download CV</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!--Скиллсы доп доп есес-->
-        <section class="skills" id="skills">
-            <div class="content">
-                <div class="title"><span>My Skills</span></div>
-                <div class="skills-details"></div>
-                <div class="text">
-                    <div class="topics">Skills Reflects Our Knowledge</div>
-                    <p data-aos="fade-right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, libero? Accusamus ad sed, ipsa unde atque corrupti beatae quia, tenetur nesciunt dolorem inventore sunt pariatur cupiditate veniam? Magnam, maiores officia.
-
-                    </p>
-                    <div class="experience">
-                        <div class="num">10</div>
-                        <div class="exp">Yaers Of <br/>
-                        experience</div>
-                    </div>
-                </div>
-                <div class="boxes">
-                <div class="box"></div>
-                <div class="topic">Csharp</div>
-                <div class="per">70%</div>
-                </div>
-                <div class="box">
-                    <div class="topic">C/C++</div>
-                    <div class="per">50%</div>
-                </div>
-                <div class="box">
-                    <div class="topic">Python</div>
-                    <div class="per">20%</div>
-                </div>
-                <div class="box">
-                    <div class="topic">HTML/CSS/JS</div>
-                    <div class="per">20%</div>
-                </div>
-
-            </div>
-        </section>
-
-        <!--Сервисы(нихуя на самом деле нет, я еблан)-->
-        <section class="services" id="services">
-            <div class="content">
-                <div class="title"><span>My Services</span> </div>
-                <div class="boxes">
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fas fa-desktop"></i>
-                        </div>
-                        <div class="topic"> Desktop Apps Development</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, laboriosam. Ullam repellat autem eaque, totam minima facilis, corrupti vitae voluptas nisi cumque corporis aperiam explicabo rem repudiandae. Nemo, amet voluptatibus!
-
-                        </p>
-                    </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <div class="topic"> Graphic Design</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, laboriosam. Ullam repellat autem eaque, totam minima facilis, corrupti vitae voluptas nisi cumque corporis aperiam explicabo rem repudiandae. Nemo, amet voluptatibus!
-
-                        </p>
-                    </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fas fa-gamepad"></i>
-                        </div>
-                        <div class="topic"> Cheat Development</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, laboriosam. Ullam repellat autem eaque, totam minima facilis, corrupti vitae voluptas nisi cumque corporis aperiam explicabo rem repudiandae. Nemo, amet voluptatibus!
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!--Связаться с еблом-->
-
-            <section class="contact" id="contact"> 
-                <div class="content">
-                    <div class="title">
-                        <span>Contact me</span>
-                    </div>
-                    <div class="text">
-                        <div class="topic">Have any Project?</div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, ea distinctio officiis molestias expedita obcaecati pariatur quam officia fuga, dolor alias beatae eum ex laudantium repudiandae harum cum, dolorum iusto?
-                            <div class="button">
-                                <button>
-                                    Let's Chat
-                                </button>
-                            </div>
-                        </p>
-                    </div>
-                 </div>   
-            </section>
-            <!--футер сайта окдада(нахуя?)-->
-            <footer>
-<div class="text"><span>Created By <a href="#">Fujiwara</a> | &#169;2024 All Rights Resorved</span></div>
-            </footer>
-    </body>
+</body>
 </html>
